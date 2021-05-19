@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "hello",
 ]
 
-NOTE:
+# NOTE:
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
