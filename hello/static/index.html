@@ -1,0 +1,101 @@
+!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.animation-mixer@3.4.0/dist/aframe-extras.animation-mixer.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        
+        <img
+          id="groundTexture"
+          src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+        />
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg" />
+        <img
+          id="skyTexture"
+          src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg"
+        />
+        <a-asset-item
+          id="character1"
+          src="https://cdn.glitch.com/e22406de-b471-43db-b093-2a682f858086%2Fhunter_01.glb"
+          position="-10 0 -3"        
+                      ></a-asset-item>
+        
+        <a-asset-item
+          id="character2"
+          src="https://cdn.glitch.com/e22406de-b471-43db-b093-2a682f858086%2Fhunter_02.glb?v=1616709300890"
+          position="0 0 -3"
+                      ></a-asset-item>
+        
+        <a-asset-item
+          id="character3"
+          src="https://cdn.glitch.com/e22406de-b471-43db-b093-2a682f858086%2Fhunter_03.glb?v=1616709296060"
+          position="10 0 -3"        
+                      ></a-asset-item>
+      </a-assets>
+      
+      
+      
+      <a-entity
+        text="value: They get a lot of homework from their teachers but they don't want to do it because their friends are going out and they would rather do that. They think homework is boring and it is more fun to spend time with friends, play video games, and spend time with family. For these reasons, they choose not to prioritize homework.
+         ; color: #DFFF00"
+        
+        position="-10  4 -3"
+        scale="8 8 8"
+        rotation="0 50 0"
+      ></a-entity>
+       
+      <a-entity
+        text="value: As they get older they get a job that is really stressful and is a lot of work. They have poor time management skills from not doing homework in school and learning to manage time and stress so they end up staying up all night doing their work. Finally over time they learn how to organize their tasks and get it done efficiently. ; color: #DFFF00"
+    
+        position="0 4 -3"
+        scale="8 8 8"
+        
+      ></a-entity>
+
+      <a-entity
+        text="value: Independence and time management is very important to a job because most of the time you won't have help from others and if you're not efficient with your work then you won't have the time to finish. So do your homework now to arm you with important skills for later in life.; color: #DFFF00"
+        
+        position="10 4 -3"
+        scale="8 8 8"
+                rotation="0 -50 0"
+      ></a-entity>
+      
+      <a-entity environment="preset: forest; dressingAmount: 100"></a-entity>
+      <a-plane
+        src="#groundTexture"
+        rotation="-90 0 0"
+        width="30"
+        height="30"
+        repeat="15 15"
+      ></a-plane>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
+      <a-entity
+        gltf-model="#character1"
+        position="-10 0 -5"
+        rotation="0 0 0"
+        scale="1 1 1"
+        animation-mixer
+      ></a-entity
+      >
+        <a-entity gltf-model="https://cdn.glitch.com/e22406de-b471-43db-b093-2a682f858086%2Fhunter_02.glb?v=1616709300890" position="0 0 -5" rotation="" scale="1 1 1" animation-mixer=""></a-entity>
+       <a-entity
+        gltf-model="#character3"
+        position="10 0 -5"
+        rotation="0 0 0"
+        scale="1 1 1"
+        animation-mixer
+      ></a-entity
+      >
+      <a-camera>
+        <a-cursor>
+        </a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
