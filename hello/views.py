@@ -31,6 +31,7 @@ def index(request):
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
+    <p>BILL TORCASO ADDED THIS TEXT.</p>
     <a-scene>
       <a-box position="-1 3 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -8" radius="1.25" color="#EF2D5E" scale="10 10 10">
